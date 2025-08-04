@@ -1,0 +1,168 @@
+/* This file contains the contents of the @layer base */
+:root {
+    /* Color System */
+    --color-blue-base: 220 60% 50%;
+    --color-green-base: 140 50% 45%;
+    --color-orange-base: 40 70% 50%;
+    --color-red-base: 0 60% 50%;
+    --color-cyan-base: 200 60% 50%;
+
+    /* Backgrounds and Surfaces */
+    --color-background-gradient-start: hsl(200, 60%, 95%);
+    --color-background-gradient-end: hsl(220, 70%, 98%);
+    --color-surface-default: hsla(0, 0%, 100%, 0.95);
+    --color-surface-muted: hsla(210, 15%, 98%, 0.7);
+    --color-surface-input: white;
+    
+    /* Text Colors */
+    --color-text-default: hsl(220, 15%, 30%);
+    --color-text-header: hsl(220, 20%, 20%);
+    --color-text-subheader: hsl(220, 10%, 45%);
+    --color-text-on-accent: hsl(0, 0%, 100%);
+
+    /* Border Color */
+    --color-border-default: hsl(210, 15%, 90%);
+
+    /* Primary Colors */
+    --color-primary-default: hsl(var(--color-blue-base));
+    --color-primary-gradient-start: hsl(220, 60%, 70%);
+    --color-primary-gradient-end: hsl(240, 70%, 75%);
+
+    /* Success Colors */
+    --color-success-default: hsl(var(--color-green-base));
+    --color-success-gradient-start: hsl(140, 60%, 70%);
+    --color-success-gradient-end: hsl(160, 70%, 75%);
+
+    /* Warning Colors */
+    --color-warning-default: hsl(var(--color-orange-base));
+    --color-warning-gradient-start: hsl(40, 80%, 75%);
+    --color-warning-gradient-end: hsl(30, 90%, 80%);
+
+    /* Danger Colors */
+    --color-danger-default: hsl(var(--color-red-base));
+    --color-danger-gradient-start: hsl(0, 60%, 75%);
+    --color-danger-gradient-end: hsl(10, 70%, 80%);
+
+    /* Info Colors */
+    --color-info-default: hsl(var(--color-cyan-base));
+    --color-info-gradient-start: hsl(200, 70%, 70%);
+    --color-info-gradient-end: hsl(210, 80%, 75%);
+
+    /* Shadow System */
+    --shadow-xs: hsla(220, 20%, 20%, 0.02);
+    --shadow-sm: hsla(220, 20%, 20%, 0.04);
+    --shadow-md: hsla(220, 20%, 20%, 0.08);
+    --shadow-lg: hsla(220, 20%, 20%, 0.15);
+    --shadow-xl: hsla(220, 20%, 20%, 0.25);
+    --shadow-strong: hsla(220, 20%, 20%, 0.4);
+
+
+    /* Radius System */
+    --radius-xs: 6px;
+    --radius-base: 12px;
+    --radius-medium: 18px;
+    --radius-large: 24px;
+    --radius-button: 30px;
+    
+    /* Spacing System */
+    --spacing-xxs: 0.125rem; /* 2px */
+    --spacing-xs: 0.25rem;  /* 4px */
+    --spacing-sm: 0.5rem;   /* 8px */
+    --spacing-md: 1rem;     /* 16px */
+    --spacing-lg: 1.5rem;   /* 24px */
+    --spacing-xl: 2rem;     /* 32px */
+    --spacing-xxl: 3rem;    /* 48px */
+    --spacing-xxxl: 4rem;   /* 64px */
+
+    /* Typography Scale */
+    --font-size-sm: 0.85rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.15rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: clamp(2rem, 1.5rem + 2.5vw, 2.75rem);
+
+    color-scheme: light dark;
+
+    /* Button Gradients & Shadows */
+    --btn-primary-bg: linear-gradient(135deg, var(--color-primary-gradient-start), var(--color-primary-gradient-end)), radial-gradient(circle at 30% 30%, hsla(220, 60%, 80%, 0.3), transparent);
+    --btn-secondary-bg: linear-gradient(135deg, var(--color-warning-gradient-start), var(--color-warning-gradient-end));
+    --btn-danger-bg: linear-gradient(135deg, var(--color-danger-gradient-start), var(--color-danger-gradient-end));
+    --btn-success-bg: linear-gradient(135deg, var(--color-success-gradient-start), var(--color-success-gradient-end));
+    --btn-info-bg: linear-gradient(135deg, var(--color-info-gradient-start), var(--color-info-gradient-end));
+    
+    --btn-shadow-normal: 0 4px 10px var(--shadow-sm);
+    --btn-shadow-hover: 0 7px 14px var(--shadow-md);
+    --btn-shadow-active: 0 2px 5px var(--shadow-sm);
+}
+
+body.dark-mode {
+    /* Dark Mode Colors */
+    --color-background-gradient-start: hsl(230, 20%, 18%);
+    --color-background-gradient-end: hsl(245, 25%, 22%);
+    --color-surface-default: hsla(220, 20%, 25%, 0.95);
+    --color-surface-muted: hsla(220, 20%, 20%, 0.7);
+    --color-surface-input: hsl(220, 20%, 20%);
+    
+    --color-text-default: hsl(210, 15%, 80%);
+    --color-text-header: hsl(210, 10%, 75%);
+    --color-text-subheader: hsl(210, 10%, 60%);
+    --color-text-on-accent: hsl(0, 0%, 90%);
+
+    --color-border-default: hsl(220, 15%, 35%);
+
+    --color-primary-default: hsl(220, 60%, 65%);
+    --color-primary-gradient-start: hsl(220, 30%, 40%);
+    --color-primary-gradient-end: hsl(240, 35%, 45%);
+
+    --color-success-default: hsl(140, 50%, 60%);
+    --color-success-gradient-start: hsl(140, 30%, 40%);
+    --color-success-gradient-end: hsl(160, 35%, 45%);
+
+    --color-warning-default: hsl(40, 70%, 65%);
+    --color-warning-gradient-start: hsl(40, 45%, 50%);
+    --color-warning-gradient-end: hsl(30, 50%, 55%);
+    
+    --color-danger-default: hsl(0, 60%, 65%);
+    --color-danger-gradient-start: hsl(0, 35%, 45%);
+    --color-danger-gradient-end: hsl(10, 40%, 50%);
+    
+    --color-info-default: hsl(200, 60%, 65%);
+    --color-info-gradient-start: hsl(200, 45%, 50%);
+    --color-info-gradient-end: hsl(210, 50%, 55%);
+
+    --shadow-xs: hsla(220, 20%, 10%, 0.1);
+    --shadow-sm: hsla(220, 20%, 10%, 0.2);
+    --shadow-md: hsla(220, 20%, 10%, 0.3);
+    --shadow-lg: hsla(220, 20%, 10%, 0.4);
+    --shadow-xl: hsla(220, 20%, 10%, 0.5);
+    --shadow-strong: hsla(220, 20%, 10%, 0.6);
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Enhanced Focus Management */
+:focus-visible {
+    outline: 3px solid var(--color-info-default);
+    outline-offset: 3px;
+    border-radius: var(--radius-xs);
+}
+:focus:not(:focus-visible) {
+    outline: none;
+}
+select:focus-visible, 
+input:focus-visible, 
+textarea:focus-visible {
+    outline: none;
+    border-color: var(--color-primary-default);
+    box-shadow: 0 0 0 4px hsla(220, 60%, 75%, 0.3);
+}
+.modal-content:focus-within {
+    box-shadow: 0 0 0 3px var(--color-info-default), 0 20px 40px var(--shadow-xl);
+}
