@@ -1,0 +1,23 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.icon-primary { color: var(--color-primary-default); }
+.icon-success { color: var(--color-success-default); }
+.icon-warning { color: var(--color-warning-default); }
+.icon-danger { color: var(--color-danger-default); }
+.icon-info { color: var(--color-info-default); }
