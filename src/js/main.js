@@ -16,6 +16,8 @@ import { applyTheme } from './ui/theme.js'; // We'll create this file
 import { populateDashboard } from './ui/dashboard.js';
 import { createTable } from './ui/exerciseTable.js';
 import { loadPersistentIndividualTimers } from './features/timers.js';
+import { exportCSV } from './features/data.js';
+
 
 /**
  * Initializes the entire application.
