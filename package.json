@@ -1,15 +1,32 @@
 {
-  "name": "lyftiv-app",
+  "name": "lyftiv-vite",
+  "version": "0.1.0",
   "private": true,
-  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --port 5174",
+    "test": "vitest --ui",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "idb-keyval": "^6.2.1"
   },
   "devDependencies": {
-    "vite": "^5.0.0"
-  },
-  "dependencies": {}
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
+    "@vitejs/plugin-legacy": "^5.4.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "jsdom": "^26.0.0",
+    "postcss": "^8.4.41",
+    "postcss-nesting": "^12.1.5",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "vite-plugin-pwa": "^0.20.5",
+    "vitest": "^2.0.5"
+  }
 }
