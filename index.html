@@ -1,15 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lyftiv - Suivi Séance Musculation</title>
-    <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script type="module" src="/js/main.js"></script>
-</head>
-<body>
-    <div id="dashboard" class="dashboard-container">...</div>
-    <div id="app-container" class="hidden">...</div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>Lyftiv</title>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Lyftiv</h1>
+      <nav>
+        <button id="openNewSessionBtn">Nouvelle séance</button>
+        <button id="viewHistoryBtn">Historique</button>
+        <button id="plateCalculatorBtn">Calculateur de disques</button>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="exerciseListContainer"></section>
+      <section id="sessionControls">
+        <button id="finishSessionBtn">Terminer la séance</button>
+        <button id="exportBtn">Exporter</button>
+        <input type="file" id="importFile" accept="application/json" />
+      </section>
+    </main>
+    <div id="historyModal" class="modal-overlay hidden">
+      <div class="modal-panel">
+        <button id="closeHistoryModal">×</button>
+        <h2>Historique</h2>
+      </div>
+    </div>
+    <div id="newSessionModal" class="modal-overlay hidden">
+      <div class="modal-panel">
+        <button id="closeNewSessionModal">×</button>
+        <input type="text" id="newSessionNameInput" placeholder="Nom de la séance" />
+        <button id="createNewSessionBtn">Créer</button>
+      </div>
+    </div>
+    <div id="plateCalculatorModal" class="modal-overlay hidden">
+      <div class="modal-panel">
+        <button id="closePlateCalculatorModal">×</button>
+        <h2>Calculateur de disques</h2>
+      </div>
+    </div>
+    <div id="notification-container"></div>
+  </body>
 </html>
