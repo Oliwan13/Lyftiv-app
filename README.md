@@ -1,2 +1,0 @@
-# suivi-musculation
-# Lyftiv-app
